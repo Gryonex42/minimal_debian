@@ -60,7 +60,7 @@ esac
 
 # ---------------------------------------------------------------- extra repos
 log "VSCodium repo"
-wget -qO- https://gitlab.com/paulcarroll/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+wget -qO- https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
   | gpg --dearmor | sudo tee /usr/share/keyrings/vscodium-archive-keyring.gpg >/dev/null
 sudo tee /etc/apt/sources.list.d/vscodium.sources >/dev/null <<EOF
 Types: deb
